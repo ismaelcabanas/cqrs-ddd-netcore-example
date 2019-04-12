@@ -38,11 +38,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\mooc\Mooc\Mooc.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="BuildReports\Coverage" />
-    <Folder Include="BuildReports\UnitTests" />
+    <ProjectReference Include="..\..\..\src\shared\Shared\Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
