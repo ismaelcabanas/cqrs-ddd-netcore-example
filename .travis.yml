@@ -6,3 +6,4 @@ dotnet: 2.1
 script:
   - dotnet restore
   - dotnet test ./test/mooc/Mooc.Tests/Mooc.Tests.csproj --logger 'trx;LogFileName=TestResults.trx' --logger 'xunit;LogFileName=TestResults.xml' --results-directory ./BuildReports/UnitTests /p:CollectCoverage=true /p:CoverletOutput=../../../BuildReports/Coverage/ /p:CoverletOutputFormat=\"cobertura,json\" /p:Exclude='[xunit.*]*%2c[Mooc.Tests]*'
+  - dotnet test ./test/mooc/Mooc.AcceptanceTests/Mooc.AcceptanceTests.csproj --logger 'trx;LogFileName=TestResults.trx' --logger 'xunit;LogFileName=TestResults.xml' --results-directory ./BuildReports/UnitTests /p:CollectCoverage=true /p:CoverletOutput=../../../BuildReports/Coverage/ /p:CoverletOutputFormat=\"cobertura,json\" /p:Exclude='[xunit.*]*%2c[Mooc.AcceptanceTests]*' /p:MergeWith='../../../BuildReports/Coverage/coverage.json'
