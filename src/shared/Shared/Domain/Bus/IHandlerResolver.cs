@@ -1,9 +1,9 @@
-using Shared.Domain.Bus.Command;
+using Shared.Domain.Bus.Commands;
 
 namespace Shared.Domain.Bus
 {
     public interface IHandlerResolver
     {
-        ICommandHandler ResolveHandler(Command.Command command);
+        ICommandHandler ResolveHandler(Command command);
     }
 }

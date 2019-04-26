@@ -1,5 +1,5 @@
 using System;
-using Shared.Domain.Bus.Command;
+using Shared.Domain.Bus.Commands;
 
 namespace Shared.Tests.Fakes
 {

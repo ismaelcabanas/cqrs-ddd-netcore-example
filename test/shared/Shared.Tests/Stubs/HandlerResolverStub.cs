@@ -1,5 +1,5 @@
 using Shared.Domain.Bus;
-using Shared.Domain.Bus.Command;
+using Shared.Domain.Bus.Commands;
 
 namespace Shared.Tests.Stubs
 {

@@ -1,7 +1,7 @@
 using System;
 using FluentAssertions;
 using Shared.Domain.Bus;
-using Shared.Domain.Bus.Command;
+using Shared.Domain.Bus.Commands;
 using Shared.Tests.Fakes;
 using Shared.Tests.Spys;
 using Shared.Tests.Stubs;

@@ -1,4 +1,4 @@
-using Shared.Domain.Bus.Command;
+using Shared.Domain.Bus.Commands;
 using Shared.Tests.Fakes;
 
 namespace Shared.Tests.Spys

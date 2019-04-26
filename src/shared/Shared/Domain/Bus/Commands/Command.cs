@@ -1,6 +1,6 @@
 using System;
 
-namespace Shared.Domain.Bus.Command
+namespace Shared.Domain.Bus.Commands
 {
     public abstract class Command : Request
     {
