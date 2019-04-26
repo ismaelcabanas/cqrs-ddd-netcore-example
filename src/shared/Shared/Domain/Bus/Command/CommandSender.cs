@@ -17,6 +17,10 @@ namespace Shared.Domain.Bus.Command
             {
                 throw new ArgumentNullException(nameof(command));
             }
+
+            ICommandHandler commandHandler = _handlerResolver.ResolveHandler(command);
+            
+            commandHandler.Handle(command);
         }
     }
 }

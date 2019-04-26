@@ -1,7 +1,7 @@
 namespace Shared.Domain.Bus.Command
 {
-    public interface ICommandHandler<in TCommand> where TCommand : Command
+    public interface ICommandHandler
     {
-        void Handle(TCommand command);
+        void Handle(Command command);
     }
 }

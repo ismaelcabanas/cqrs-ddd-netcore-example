@@ -12,9 +12,9 @@ namespace Shared.Tests.Domain.Bus.Command
     public sealed class CommandSenderShould
     {
 
-        private ICommandSender _sut;
+        private readonly ICommandSender _sut;
         private SomeCommand _someCommand;
-        private SomeCommandHandlerSpy _commandHandlerSpy;
+        private readonly SomeCommandHandlerSpy _commandHandlerSpy;
         private IHandlerResolver _handlerResolver;
 
         public CommandSenderShould()

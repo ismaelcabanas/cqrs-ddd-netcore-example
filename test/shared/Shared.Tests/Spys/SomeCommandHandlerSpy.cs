@@ -3,18 +3,18 @@ using Shared.Tests.Fakes;
 
 namespace Shared.Tests.Spys
 {
-    public sealed class SomeCommandHandlerSpy : ICommandHandler<SomeCommand>
+    public sealed class SomeCommandHandlerSpy : ICommandHandler
     {
-        private bool _commandHandled = false;
-        
-        public void Handle(SomeCommand command)
-        {
-            _commandHandled = true;
-        }
+        private bool _commandHandled = false;                
 
         public bool ShouldHandle(Command command)
         {
             return _commandHandled;
+        }
+
+        public void Handle(Command command)
+        {
+            _commandHandled = true;
         }
     }
 }

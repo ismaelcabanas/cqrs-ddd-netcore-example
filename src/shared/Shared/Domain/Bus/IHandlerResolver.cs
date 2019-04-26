@@ -1,7 +1,9 @@
+using Shared.Domain.Bus.Command;
+
 namespace Shared.Domain.Bus
 {
     public interface IHandlerResolver
     {
-        THandler ResolveHandler<THandler>();
+        ICommandHandler ResolveHandler(Command.Command command);
     }
 }
