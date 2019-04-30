@@ -5,7 +5,7 @@ namespace Shared.Tests.Fakes
 {
     public sealed class SomeCommand : Command
     {
-        public SomeCommand(Guid messageId) : base(messageId)
+        public SomeCommand() : base(Guid.NewGuid())
         {
         }
     }

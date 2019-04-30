@@ -18,9 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Bus\Commands" />
-    <Folder Include="Domain\Bus\Queries" />
-    <Folder Include="Spys" />
     <Folder Include="Stubs" />
   </ItemGroup>
 
